@@ -1,0 +1,5 @@
+https://www.jqueryscript.net/loading/Radial-Progress-Bar-jQuery-SVG-CSS3.html
+
+
+JQUARRY CDN
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
