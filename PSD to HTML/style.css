@@ -1,0 +1,405 @@
+/* =========================== */
+/* BASIC SETUP */
+/* ===========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.4rem;
+    font-size: 1.6rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/* HEADDING TAGS */
+
+h1 {
+    font-size: 4.2rem;
+    color: #fff;
+}
+
+/* =========================== */
+/* REUSABLE CSS */
+/* ===========================*/
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+section {
+    padding: 8rem 0;
+}
+
+h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    height: .4rem;
+    width: 8.5rem;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+
+}
+/* BOX */
+
+.box {
+    padding: 1%;
+}
+
+.box p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    color: #fff;
+}
+/* PARAGRAPH */
+
+.little-description {
+    font-size: 1.8rem;
+    width: 60%;
+    margin: auto;
+    line-height: 3rem;
+}
+
+
+/* BUTTON */
+
+.btn,
+.btn:link,
+.btn:visited {
+    background-color: #333;
+    border-bottom: .3rem solid #0000;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 8rem;
+    border-radius: .3rem;
+    display: inline-block;
+    margin-top: 5rem;
+    font-size: 1.8rem;
+}
+
+/* =========================== */
+/* HEADER SECTION */
+/* ===========================*/
+
+header {
+    background-color: #87509c;
+    height: 85vh;
+    position: relative;
+}
+.logo {
+    height: 3.5rem;
+    width: auto;
+    margin-top: 3.5rem;
+    float: left;
+}
+
+/* MAIN NAVIGATION */
+
+.main-nav {
+    float: right;
+    margin-top: 4rem;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.main-nav li:first-child {
+    margin-left: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.4rem 1.6rem;
+    border-radius: .3rem;
+    background-color: rgba(100, 58, 121, 0);
+    display: inline-block;
+    font-size: 1.6rem;
+    transition: .3s;
+   
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited {
+    border-radius: .3rem;
+    background-color: rgba(100, 58, 121, 1);
+}
+.main-nav li.active a {
+    background-color: rgba(100, 58, 121, 1);
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 5rem;
+}
+
+.btn-hero:link, 
+.btn-hero:visited {
+    background-color: #eb7d4b;
+    border-color: #c86a40;
+}
+
+/* =========================== */
+/* SERVICE SECTION */
+/* ===========================*/
+
+.services-section {
+    color: #fff;
+    text-align: center;
+    background-color: #17c2a4;
+}
+
+.services-section h2::after {
+    background-color: #14a58c;
+}
+
+.services-icon {
+    height: 12rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+}
+
+/* =========================== */
+/* OUR TEAM SECTION */
+/* ===========================*/
+
+.team-section {
+    text-align: center;
+    background-color: #e7f1f8;
+}
+
+.team-section h2 {
+    color: #3c4761;
+}
+
+.team-section h2::after {
+    background-color: #c8d9e5;
+}
+
+.team-section .little-discription {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #27283d;
+}
+
+.team-mamber {
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.team-section h3 {
+    color: #27283d;
+}
+
+.roll {
+    color: #30bae7;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    display: inline-block;
+    padding-top: 1.5rem;
+}
+
+.team-section .box p{
+    color: #3c4761;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+
+.social-link ul li {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .5rem;
+}
+
+.social-link ul li a i {
+    color: #fff;
+}
+
+.social-link ul li a i::before {
+    background-color: #bdd1df;
+    height: 2rem;
+    width: 2rem;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.social-link ul li a:hover i::before {
+    background-color: #393939;
+    transform: rotate(360deg);
+}
+
+/* =========================== */
+/* SKILL SECTION */
+/* ===========================*/
+
+.skill-section {
+    background-color: #fff;
+    text-align: center;
+}
+
+.skill-section h2,
+.skill-section h3 {
+    color: #3c4761;
+}
+
+.skill-section h2::after {
+    background-color: #dfe8ed;
+}
+
+.skill-section p {
+    font-size: 1.8rem;
+    width: 60%;
+    margin: auto;
+    line-height: 3rem;
+}
+
+.skill-section .box {
+    margin-top: 4.5rem;
+}
+
+svg.radial-progress circle {
+    stroke-width: 5;
+}
+
+svg.radial-progress text {
+    fill: #393939;
+    font-size: 1.5rem;
+}
+
+svg.web-design circle {
+    stroke: #30bae7;
+}
+
+svg.html-css circle {
+    stroke: #d74680;
+}
+
+svg.graphic-design circle {
+    stroke: #15c7a8;
+}
+
+svg.ui-ux circle {
+    stroke: #eb7d4b;
+}
+
+/* =========================== */
+/* PORTFOLIO SECTION */
+/* ===========================*/
+
+.portfolio-section {
+    text-align: center;
+    background-color: #ffdd99;
+}
+
+.portfolio-section h2 {
+    color: #393939;
+}
+
+.portfolio-section h2::after {
+    background-color: #e5c37f;
+}
+
+.portfolio-section p {
+    font-size: 1.8rem;
+    width: 60%;
+    margin: auto;
+    line-height: 3rem;
+}
+
+.portfolio-filter {
+    margin: 4.5rem 0;
+}
+
+.portfolio-filter button {
+    background-color: #ebc985;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    color: #3c4761;
+    margin: 0 .5rem;
+}
+
+.portfolio-filter button:hover {
+    cursor: pointer;
+    box-shadow: inset 0px 3px 5px #3c4761;
+}
+
+.porfolio-img {
+    width: 100%;
+    height: 30rem;
+}
+
+.portfolio-section .col:nth-child(3) {
+    margin-left: 0;
+}
+
+.portfolio-section .btn-lode-more {
+    background-color: #17c2a4;
+    border: #14a58c;
+    padding: 3rem 6rem;
+}
+
+.portfolio-section .mixitup-control-active {
+    background-color: #fff;
+}
